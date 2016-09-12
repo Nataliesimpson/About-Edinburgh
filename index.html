@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title> - UserVision Accessibility Task -</title>
+  <script src='app.js'>
+  </script>
+  <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+
+<nav role="navigation" id="nav">
+  <ul>
+    <li><a href="/">Home</a></li>
+  </ul>
+</div>
+</nav> 
+
+<ul class="skip-links">
+  <li><a href="#nav">Skip to navigation</a></li>
+  <li><a href="#main">Skip to main content</a></li>
+  <li><a href="#comments">Skip to Message Board</a></li>
+</ul> 
+
+<body>
+<div class='row' id='mainPage'>
+ <div class='col-12'>
+
+<div class='row'>
+  <div class='col-2'></div>
+  <div class='col-8'>
+  <main role="main" id="main">
+    <h1>About Edinburgh</h1>
+    <p>Steeped in history, Edinburgh seamlessly blends old and new, providing locals & visitors with the perfect destination to experience the sights, sounds and tastes of a diverse and vibrant city.</p>
+    <p>Central Edinburgh has two distinct parts, divided by Princes Street, which runs roughly east-west under the shadow of Castle Rock.
+    
+    The Old Town, although only about a mile long and 300 yards wide, represents the total extent of the twin burghs of Edinburgh and Canongate for the first 650 years of their existence, and its general appearance and character remain indubitably medieval with its tortuous alleys and tightly packed closes. Containing as it does the majority of the city's most famous tourist sights - including the Castle and the Royal Mile - it makes by far the best starting point for your explorations. </p>
+    <img id="image" src="hill.jpg" aria-describedat="#image" alt="A photo of the Edinburgh skyline">
+    <p>Historically part of Midlothian, the city has long been a centre of education, particularly in the fields of medicine, Scots law, literature, the sciences and engineering. The University of Edinburgh, founded in 1582 and now one of four in the city, was placed 17th in the QS World University Rankings in 2013 and 2014.</p>
+    <p>The city is also famous for the Edinburgh International Festival and the Fringe, the latter being the world's largest annual international arts festival. The city's historical and cultural attractions have made it the United Kingdom's second most popular tourist destination after London, attracting over one million overseas visitors each year.</p>
+    <p>Historic sites in Edinburgh include Edinburgh Castle, Holyrood Palace, the churches of St. Giles, Greyfriars and the Canongate, and the extensive Georgian New Town, built in the 18th century. Edinburgh's Old Town and New Town together are listed as a UNESCO World Heritage Site, which has been managed by Edinburgh World Heritage since 1999.</p>
+    <img id="castleImage" src="castle.jpg" aria-describedat="#castle1mage" alt="A photo of Edinburgh Castle">
+  </main> 
+  </div>
+  <div class='col-2'></div>
+  </div>
+
+  <div class='row'>
+    <div class='col-2'></div>
+    <div class='col-8'>
+  <section id="comments" class="container content">   
+  <div>
+    <h2>Message Board</h2>
+      <ul id="comment-list"></ul>
+  </div>
+  <h3>Add your message to the board</h3>
+  <div id="error-list" aria-live="assertive" aria-atomic="true"></div>
+  <form id="comment-form">
+    <label for="fname">First Name</label>
+    <input type="text" id="name-text-input" size="37" placeholder="First Name" aria-required="true">
+    <label for="sname">Surname </label>
+    <input type="text" id="surname-text-input" size="37" placeholder="Surname" autocomplete="off"></br>
+    <label for="comment">Message  (required)  </label>
+    <input type="text" id="comment-text-input" size="80" placeholder="Leave your message for us here (required field)" aria-required="true"></br>
+    <input type="submit" id="add-button" value="Add Message" aria-describedby="descriptionAddComment">
+    <p id="descriptionAddComment">This will add your message to the notice board</p>
+  </form>
+  </section>
+  </div>
+  <div class='col-2'></div>
+  </div>
+
+  <div class='row'>
+  <div class='col-3'></div>
+  <div role="complementary" id="places" class="col-6">
+  <h2>Places to visit</h2>
+  <input type="button" id="startButton" value="Start" aria-describedby="descriptionStartPlaces"
+  onclick="window.setInterval('changePlace()', 3000)"/></p>
+  <div id="descriptionStartPlaces">When you click this button you will hear more about the places we love to visit in Edinburgh</div>
+  <p aria-live="polite" aria-atomic="true">
+  Places we love to visit in Edinburgh are: <span id="place">The Castle</span></p>
+  <p>
+  <p></p>
+  </div>
+  <div class='col-3'></div>
+  </div>   
+
+
+  <div>
+  <ul class="backToTop">
+  <li><a href="#nav">Back to Navigation</a></li>
+  </ul>
+  </div>
+
+  
+  <footer role="contentinfo">
+  <p> © UserVision Task - NS </p>
+  </footer>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
